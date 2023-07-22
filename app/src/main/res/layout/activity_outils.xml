@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".Outils">
+
+    <ImageView
+        android:id="@+id/backArrow4"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <Button
+        android:id="@+id/outil1_prendre"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="56dp"
+        android:text="Prendre"
+        android:textSize="13dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outil2_prendre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/outil2_prendre" />
+
+    <Button
+        android:id="@+id/outil1_deposer"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:text="Déposer"
+        android:textSize="13dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outil2_deposer"
+        app:layout_constraintEnd_toEndOf="@+id/outil1_prendre"
+        app:layout_constraintStart_toStartOf="@+id/outil1_prendre" />
+
+    <Button
+        android:id="@+id/outil2_prendre"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="7dp"
+        android:text="Prendre"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/outil1_prendre"
+        app:layout_constraintStart_toEndOf="@+id/outil3_prendre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/outil2_deposer"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="107dp"
+        android:text="Déposer"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/outil1_deposer"
+        app:layout_constraintStart_toStartOf="@+id/outil3_deposer"
+        app:layout_constraintTop_toBottomOf="@+id/outil2_prendre" />
+
+    <Button
+        android:id="@+id/outil3_prendre"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="7dp"
+        android:text="Prendre"
+        android:textSize="13dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outil2_prendre"
+        app:layout_constraintEnd_toStartOf="@+id/outil2_prendre"
+        app:layout_constraintStart_toEndOf="@+id/outil4" />
+
+    <Button
+        android:id="@+id/outil3_deposer"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:text="Déposer"
+        android:textSize="13dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outil2_deposer"
+        app:layout_constraintEnd_toEndOf="@+id/outil3_prendre"
+        app:layout_constraintStart_toStartOf="@+id/outil3_prendre" />
+
+    <Button
+        android:id="@+id/outil4"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="10dp"
+        android:text="Outil 4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outil3_prendre"
+        app:layout_constraintEnd_toStartOf="@+id/outil3_prendre"
+        app:layout_constraintStart_toEndOf="@+id/outil5" />
+
+    <Button
+        android:id="@+id/outil5"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="9dp"
+        android:text="Outil 5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/outil4"
+        app:layout_constraintStart_toEndOf="@+id/outil6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/outil6"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="8dp"
+        android:text="Outil 6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outil5"
+        app:layout_constraintEnd_toStartOf="@+id/outil5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/outil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Outil 1"
+        app:layout_constraintBottom_toTopOf="@+id/outil1_prendre"
+        app:layout_constraintEnd_toEndOf="@+id/outil1_prendre" />
+
+    <TextView
+        android:id="@+id/outil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Outil 2"
+        app:layout_constraintBottom_toTopOf="@+id/outil2_prendre"
+        app:layout_constraintEnd_toEndOf="@+id/outil2_prendre" />
+
+    <TextView
+        android:id="@+id/outil3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Outil 3"
+        app:layout_constraintBottom_toTopOf="@+id/outil3_prendre"
+        app:layout_constraintEnd_toEndOf="@+id/outil3_prendre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

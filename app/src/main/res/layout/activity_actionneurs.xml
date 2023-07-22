@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actionneursxml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".Actionneurs">
+
+
+    <ImageView
+        android:id="@+id/lumiere"
+        android:layout_width="0dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrow3"
+        app:srcCompat="@drawable/aziz" />
+
+    <ImageView
+        android:id="@+id/backArrow3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/lumiere"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/pompeEau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:text="Actionner la pompe :"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPompeOff"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pompeAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="52dp"
+        android:text="Actionner la pompe à air :"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPompeAirOff"
+        app:layout_constraintEnd_toStartOf="@+id/btnPompeAirOff"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPompeOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="61dp"
+        android:text="Off"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPompeOn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPompeOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="228dp"
+        android:text="On"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnPompeOff" />
+
+    <Button
+        android:id="@+id/btnPompeAirOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPompeAirOn"
+        app:layout_constraintStart_toStartOf="@+id/btnPompeOff" />
+
+    <Button
+        android:id="@+id/btnPompeAirOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="On"
+        app:layout_constraintStart_toStartOf="@+id/btnPompeAirOff"
+        app:layout_constraintTop_toBottomOf="@+id/btnPompeOff" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    tools:context=".Deplacements">
+
+
+    <ImageView
+        android:id="@+id/backArrow2"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <ImageView
+        android:id="@+id/y_up1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="159dp"
+        app:layout_constraintBottom_toBottomOf="@+id/z_down1"
+        app:layout_constraintEnd_toEndOf="@+id/y_down1"
+        app:layout_constraintStart_toEndOf="@+id/x_left1"
+        app:layout_constraintTop_toTopOf="@+id/backArrow2"
+        app:srcCompat="@drawable/up1" />
+
+    <ImageView
+        android:id="@+id/z_up1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/x_right1"
+        app:layout_constraintEnd_toEndOf="@+id/axe_z"
+        app:layout_constraintStart_toStartOf="@+id/z_down1"
+        app:layout_constraintTop_toTopOf="@+id/y_up1"
+        app:srcCompat="@drawable/up1" />
+
+    <ImageView
+        android:id="@+id/x_left1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/y_down1"
+        app:layout_constraintEnd_toStartOf="@+id/x_right1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/y_up1"
+        app:srcCompat="@drawable/left1" />
+
+    <ImageView
+        android:id="@+id/y_down1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/x_right1"
+        app:layout_constraintStart_toStartOf="@+id/x_left1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/down1" />
+
+    <ImageView
+        android:id="@+id/x_right1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/y_down1"
+        app:layout_constraintEnd_toStartOf="@+id/z_down1"
+        app:layout_constraintStart_toEndOf="@+id/x_left1"
+        app:layout_constraintTop_toTopOf="@+id/y_up1"
+        app:srcCompat="@drawable/right1" />
+
+    <ImageView
+        android:id="@+id/z_down1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/x_right1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/down1" />
+
+    <TextView
+        android:id="@+id/axe_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="21dp"
+        android:text="Axe Y"
+        app:layout_constraintBottom_toTopOf="@+id/y_up1"
+        app:layout_constraintEnd_toEndOf="@+id/y_up1" />
+
+    <TextView
+        android:id="@+id/axe_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="5dp"
+        android:text="Axe X"
+        app:layout_constraintBottom_toTopOf="@+id/x_right1"
+        app:layout_constraintEnd_toEndOf="@+id/x_right1" />
+
+    <TextView
+        android:id="@+id/axe_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="21dp"
+        android:text="Axe Z"
+        app:layout_constraintBottom_toTopOf="@+id/z_up1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/z_down1" />
+
+    <TextView
+        android:id="@+id/posX"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:text="Position X :"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/posY"
+        app:layout_constraintEnd_toEndOf="@+id/pos_X"
+        app:layout_constraintStart_toStartOf="@+id/pos_X" />
+
+    <TextView
+        android:id="@+id/posY"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="82dp"
+        android:text="Position Y :"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/actualiser"
+        app:layout_constraintEnd_toEndOf="@+id/pos_Y"
+        app:layout_constraintStart_toStartOf="@+id/pos_Y" />
+
+    <TextView
+        android:id="@+id/posZ"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:text="Position Z :"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/posY"
+        app:layout_constraintEnd_toEndOf="@+id/pos_Z"
+        app:layout_constraintStart_toStartOf="@+id/pos_Z" />
+
+    <TextView
+        android:id="@+id/pos_X"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/pos_Y"
+        app:layout_constraintEnd_toStartOf="@+id/x_right1"
+        app:layout_constraintStart_toStartOf="@+id/backArrow2" />
+
+    <TextView
+        android:id="@+id/pos_Y"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="36dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/actualiser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/posY" />
+
+    <TextView
+        android:id="@+id/pos_Z"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/pos_Y"
+        app:layout_constraintStart_toEndOf="@+id/pos_Y" />
+
+    <Button
+        android:id="@+id/actualiser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="65dp"
+        android:text="Actualiser positions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/remise_a_zero" />
+
+    <Button
+        android:id="@+id/remise_a_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="RàZ"
+        app:layout_constraintBaseline_toBaselineOf="@+id/actualiser"
+        app:layout_constraintEnd_toEndOf="@+id/z_down1"
+        app:layout_constraintStart_toStartOf="@+id/pos_Z" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
